@@ -3,8 +3,12 @@ import { Client } from "./Client.js";
 export class CurrentAccount {
     #client;
     agency;
-
     #balance = 0;
+
+    constructor(client, agency) {
+        this.client = client;
+        this.agency = agency;
+    }
 
     set client(newClient) {
         if (newClient instanceof Client) {
