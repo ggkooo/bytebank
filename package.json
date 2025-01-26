@@ -1,0 +1,21 @@
+{
+  "name": "bytebank",
+  "version": "1.0.0",
+  "description": "Developing the bytebank project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ggkooo/bytebank.git"
+  },
+  "author": "Giordano Bruno Biasi Berwig",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ggkooo/bytebank/issues"
+  },
+  "homepage": "https://github.com/ggkooo/bytebank#readme"
+}
