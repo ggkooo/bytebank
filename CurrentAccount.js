@@ -1,6 +1,8 @@
 export class CurrentAccount {
-    #balance = 0;
+    client;
     agency;
+
+    #balance = 0;
 
     withdraw(value) {
         if (this.#balance >= value) {
@@ -15,5 +17,10 @@ export class CurrentAccount {
             return;
         }
         this.#balance += value;
+    }
+
+    transfer(value, account) {
+        const withdrawValue = this.withdraw(value);
+        account.deposit(withdrawValue);
     }
 }
