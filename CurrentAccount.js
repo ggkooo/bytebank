@@ -1,6 +1,7 @@
 import { Client } from "./Client.js";
 
 export class CurrentAccount {
+    static accountNum = 0;
     #client;
     agency;
     #balance = 0;
@@ -8,6 +9,7 @@ export class CurrentAccount {
     constructor(client, agency) {
         this.client = client;
         this.agency = agency;
+        CurrentAccount.accountNum += 1;
     }
 
     set client(newClient) {
